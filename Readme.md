@@ -33,51 +33,60 @@ Pour ajouter des films de démonstration à la base de données, exécutez le sc
     node src/seedMovies.js
 
 Endpoints de l'API
+
 Récupérer tous les films
-URL : /api/movies
-Méthode : GET
-Réponse : Liste de tous les films
-Récupérer un film par ID
-URL : /api/movies/:id
-Méthode : GET
-Paramètres : id - ID du film
-Réponse : Détails du film
+
+    URL : /api/movies
+    Méthode : GET
+    Réponse : Liste de tous les films
+    Récupérer un film par ID
+    URL : /api/movies/:id
+    Méthode : GET
+    Paramètres : id - ID du film
+    Réponse : Détails du film
+
 Ajouter un nouveau film
-URL : /api/movies
-Méthode : POST
-Corps : JSON contenant les détails du film
-Réponse : Film ajouté
+
+    URL : /api/movies
+    Méthode : POST
+    Corps : JSON contenant les détails du film
+    Réponse : Film ajouté
+
 Rechercher des films par titre
-URL : /api/movies/search
-Méthode : GET
-Paramètres : query - Titre du film à rechercher
-Réponse : Liste des films correspondant à la recherche
+
+    URL : /api/movies/search
+    Méthode : GET
+    Paramètres : query - Titre du film à rechercher
+    Réponse : Liste des films correspondant à la recherche
+
 Exemple de Requête
-Requête de Recherche avec cURL
+
+    Requête de Recherche avec cURL
     curl -X GET "http://localhost:5000/api/movies/search?query=inception"
 
 Structure du Projet
-movie-recommendation-backend/
-├── src/
-│   ├── controllers/
-│   │   └── movieController.js
-│   ├── models/
-│   │   └── Movie.js
-│   ├── routes/
-│   │   └── movies.js
-│   ├── seedMovies.js
-│   └── index.js
-├── .env
-├── package.json
-└── README.md
+
+    movie-recommendation-backend/
+    ├── src/
+    │   ├── controllers/
+    │   │   └── movieController.js
+    │   ├── models/
+    │   │   └── Movie.js
+    │   ├── routes/
+    │   │   └── movies.js
+    │   ├── seedMovies.js
+    │   └── index.js
+    ├── .env
+    ├── package.json
+    └── README.md
 
 Dépendances
-express
-mongoose
-dotenv
-cors
-Auteur
-Votre Nom
-Licence
-Ce projet est sous licence MIT.
+    express
+    mongoose
+    dotenv
+    cors
+    Auteur
+    Votre Nom
+    Licence
+    Ce projet est sous licence MIT.
 
